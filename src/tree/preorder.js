@@ -36,3 +36,18 @@ const preorder = root => {
 };
 
 preorder(bt);
+
+
+/*非递归*/
+const preorder2 = root => {
+    const stack = [root];
+    while (stack.length) {
+        let top = stack.pop();
+        console.log(top.val);
+        top.right && stack.push(top.right);
+        // 栈后进先出
+        top.left && stack.push(top.left);
+    }
+};
+
+preorder2(bt);

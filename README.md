@@ -3,7 +3,7 @@
 ## 时间复杂度
 - 一个函数，用大 O 表示，比如 O(1)、O(2)
 - 定性描述该算法的运行时间
-## 时间复杂度
+## 空间复杂度
 - 一个函数，用大 O 表示，比如 O(1)、O(2)
 - 算法在运行过程中临时占用储存空间大小的量度
 ## 栈
@@ -54,3 +54,14 @@
     - 对根节点的右子树进行后序遍历
     - 访问根节点
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/postorder.js#L31)
+### Leetcode 
+- [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/maxDepth.js)
+- [111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/minDepth.js)
+- [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/levelOrder.js)
+- [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/inorderTraversal.js)
+- [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/hasPathSum.js)

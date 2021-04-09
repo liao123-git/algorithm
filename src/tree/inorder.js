@@ -29,10 +29,28 @@ const bt = {
 };
 
 const inorder = root => {
-    if(!root) return;
+    if (!root) return;
     inorder(root.left);
     console.log(root.val);
     inorder(root.right);
 };
 
 inorder(bt);
+
+
+/*非递归*/
+const inorder2 = root => {
+    const stack = [];
+    let p = root;
+    while (stack.length || p) {
+        while (p) {
+            stack.push(p);
+            p = p.left;
+        }
+        const n = stack.pop();
+        console.log(n.val);
+        p = n.right;
+    }
+};
+
+inorder2(bt);
