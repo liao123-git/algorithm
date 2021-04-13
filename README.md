@@ -9,6 +9,9 @@
 ## 栈
 - 一个后进先出的数据结构
 - JS 中没有栈，但是可以用 Array 实现栈的所有功能
+### Leetcode 
+- [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/stack/preorderTraversal.js)
 ### 应用场景
 - 十进制转二进制
 - 判断字符串的括号是否有效
@@ -65,3 +68,15 @@
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/inorderTraversal.js)
 - [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/hasPathSum.js)
+- [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/isSameTree.js)
+- [100. 相同的树](https://leetcode-cn.com/problems/symmetric-tree/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/isSameTree.js)
+- [103. 二叉树的锯齿形层序遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/zigzagLevelOrder.js)
+- [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/buildTree.js)
+### 前端与树 
+- 遍历 JSON 的所有节点值
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/json.js)
+- [用 React 或 Vue 编写一个省市区级联选择。](https://github.com/liao123-git/algorithm/blob/main/src/tree/CascadeSelection)
