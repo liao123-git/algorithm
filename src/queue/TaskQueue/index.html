@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/Queue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div>
+        <input type="text" v-model="task">
+        <button @click="addTask">add task</button>
+        <button @click="completeTask">complete task</button>
+    </div>
+    <ol>
+        <li v-for="item in tasks">{{item}}</li>
+    </ol>
+</div>
+<script>
+    let app = new Vue({
+        el: "#app",
+        data() {
+            return {
+                queue: new Queue([]),
+                task: "",
+            }
+        },
+        created() {
+        },
+        methods: {
+            addTask(){
+                this.queue.push(this.task);
+            },
+            completeTask(){
+                this.queue.shift();
+            }
+        },
+        computed:{
+            tasks(){
+                return this.queue.getArray();
+            }
+        }
+    });
+</script>
+</body>
+</html>

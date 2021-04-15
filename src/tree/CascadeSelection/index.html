@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <select v-model="province" @change="getCityList">
+        <option v-for='item of provinceList' :value="item">{{item}}</option>
+    </select>
+    <select v-model="city" @change="getDistrictList">
+        <option v-for='item of cityList' :value="item">{{item}}</option>
+    </select>
+    <select v-model="district">
+        <option v-for='item of districtList' :value="item">{{item}}</option>
+    </select>
+</div>
+<script>
+    let app = new Vue({
+        el: "#app",
+        data() {
+            return {
+                json: [
+                    {
+                        name: "浙江省",
+                        children: [
+                            {
+                                name: "杭州市",
+                                children: [
+                                    {
+                                        name: "上城区",
+                                    },
+                                    {
+                                        name: "拱墅区",
+                                    },
+                                    {
+                                        name: "余杭区",
+                                    },
+                                    {
+                                        name: "临平区",
+                                    },
+                                    {
+                                        name: "钱塘区",
+                                    },
+                                ]
+                            },
+                            {
+                                name: "宁波市",
+                                children: [
+                                    {
+                                        name: "海曙区",
+                                    },
+                                    {
+                                        name: "江北区",
+                                    },
+                                    {
+                                        name: "北仑区",
+                                    },
+                                    {
+                                        name: "镇海区",
+                                    },
+                                    {
+                                        name: "鄞州区",
+                                    },
+                                    {
+                                        name: "奉化区",
+                                    },
+                                    {
+                                        name: "余姚市",
+                                    },
+                                    {
+                                        name: "慈溪市",
+                                    },
+                                    {
+                                        name: "象山县",
+                                    },
+                                    {
+                                        name: "宁海县",
+                                    },
+                                ]
+                            },
+                            {
+                                name: "温州",
+                                children: [
+                                    {
+                                        name: "鹿城区",
+                                    },
+                                    {
+                                        name: "龙湾区",
+                                    },
+                                    {
+                                        name: "瓯海区",
+                                    },
+                                    {
+                                        name: "洞头区",
+                                    },
+                                    {
+                                        name: "瑞安市",
+                                    },
+                                    {
+                                        name: "乐清市",
+                                    },
+                                    {
+                                        name: "永嘉县",
+                                    },
+                                    {
+                                        name: "平阳县",
+                                    },
+                                    {
+                                        name: "苍南县",
+                                    },
+                                    {
+                                        name: "文成县",
+                                    },
+                                    {
+                                        name: "泰顺县",
+                                    },
+                                ]
+                            },
+                        ]
+                    },
+                    {
+                        name: "江苏省",
+                        children: [
+                            {
+                                name: "南京市",
+                                children: [
+                                    {
+                                        name: "玄武区",
+                                    },
+                                    {
+                                        name: "秦淮区",
+                                    },
+                                    {
+                                        name: "建邺区",
+                                    },
+                                    {
+                                        name: "鼓楼区",
+                                    },
+                                    {
+                                        name: "浦口区",
+                                    },
+                                    {
+                                        name: "栖霞区",
+                                    },
+                                    {
+                                        name: "高淳区",
+                                    },
+                                    {
+                                        name: "雨花台区",
+                                    },
+                                    {
+                                        name: "江宁区",
+                                    },
+                                    {
+                                        name: "六合区",
+                                    },
+                                    {
+                                        name: "溧水区",
+                                    },
+                                ]
+                            },
+                            {
+                                name: "连云港市",
+                                children: [
+                                    {
+                                        name: "海州区",
+                                    },
+                                    {
+                                        name: "连云区",
+                                    },
+                                    {
+                                        name: "赣榆区",
+                                    },
+                                    {
+                                        name: "灌云县",
+                                    },
+                                    {
+                                        name: "东海县",
+                                    },
+                                    {
+                                        name: "灌南县",
+                                    },
+                                ]
+                            },
+                        ]
+                    },
+                ],
+                province: "",
+                city: "",
+                district: "",
+                provinceList: [],
+                cityList: [],
+                districtList: [],
+            }
+        },
+        created() {
+            this.getProvinceList()
+        },
+        methods: {
+            getProvinceList() {
+                this.provinceList = [];
+                this.cityList = [];
+                this.districtList = [];
+                this.json.forEach(p => this.provinceList.push(p.name));
+            },
+            getCityList() {
+                this.cityList = [];
+                this.districtList = [];
+                this.json.forEach(p => {
+                    if (p.name === this.province) {
+                        p.children.forEach(c => this.cityList.push(c.name));
+                    }
+                });
+            },
+            getDistrictList() {
+                this.districtList = [];
+                this.json.forEach(p => {
+                    if (p.name === this.province) {
+                        p.children.forEach(c => {
+                            if (c.name === this.city) {
+                                c.children.forEach(d => this.districtList.push(d.name));
+                            }
+                        });
+                    }
+                });
+            }
+        }
+    });
+</script>
+</body>
+</html>

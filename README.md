@@ -7,7 +7,7 @@
 - 一个函数，用大 O 表示，比如 O(1)、O(2)
 - 算法在运行过程中临时占用储存空间大小的量度
 ## 栈
-- 一个后进先出的数据结构
+- 一个后进先出的数据结构 
 - JS 中没有栈，但是可以用 Array 实现栈的所有功能
 ### Leetcode 
 - [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
@@ -20,6 +20,48 @@
     - 最后调用的函数，最先执行完
     - JS 解释器使用栈来控制函数的调用顺序
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/stack/callStack.js)
+### 应用场景
+- 十进制转二进制
+- 判断字符串的括号是否有效
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/stack/index.js#L11)
+- 函数调用堆栈
+    - 最后调用的函数，最先执行完
+    - JS 解释器使用栈来控制函数的调用顺序
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/stack/callStack.js)
+## 队列
+- 一个先进先出的数据结构 
+- JS 中没有队列，但是可以用 Array 实现队列的所有功能
+### 应用场景
+- 需要先进先出的场景
+- 比如：食堂排队打饭、JS 异步中的任务队列、计算最近请求次数
+- 先进先出，保证有序
+### Leetcode 
+- [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/queue/RecentCounter.js)
+### 前端与队列
+- JS 异步中的任务队列
+    - 事件循环与任务队列 
+        - JS 引擎 -> WebAPIs -> Callback Queue
+        - 一段 JS 代码刚执行的时候会有一个匿名的主事件会丢到 Callback Queue 里。
+        JS 引擎会去任务队列里面取一个事件执行，因为 JS 是单线程的，每次只能执行一个事件，在执行这个事件的过程中里面的异步任务 JS 引擎会丢给 WebAPIs 来执行。
+        WebAPIs 在异步任务执行结束之后会把回调函数放到任务队列中。
+## 链表
+- 多个元素组成的列表 
+- 元素储存不连续，用 next 指针连在一起
+- JavaScript 中没有链表
+- 可以用 Object 模拟链表
+### 数组 vs 链表
+- 数组：增删非首位元素时往往需要移动元素
+- 链表：增删非首位元素，不需要移动元素，只需要更改 next 的指向即可
+### Leetcode 
+- [237. 删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/deleteNode.js)
+- [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/removeElements.js)
+- [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/reverseList.js)
+- [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/reverseList.js)
 ## 树
 - 一种分层数据的抽象模型
 - 前端工作中常见的树包括：DOM 树，级联选择，树形控件
