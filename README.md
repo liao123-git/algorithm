@@ -20,14 +20,6 @@
     - 最后调用的函数，最先执行完
     - JS 解释器使用栈来控制函数的调用顺序
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/stack/callStack.js)
-### 应用场景
-- 十进制转二进制
-- 判断字符串的括号是否有效
-    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/stack/index.js#L11)
-- 函数调用堆栈
-    - 最后调用的函数，最先执行完
-    - JS 解释器使用栈来控制函数的调用顺序
-    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/stack/callStack.js)
 ## 队列
 - 一个先进先出的数据结构 
 - JS 中没有队列，但是可以用 Array 实现队列的所有功能
