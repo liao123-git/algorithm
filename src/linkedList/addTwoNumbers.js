@@ -31,3 +31,7 @@ var addTwoNumbers = function (l1, l2) {
 
     return res.next;
 };
+/*
+- 时间复杂度：O(N) 两个链表长度的最大值
+- 空间复杂度：O(N) 两个链表长度的最大值
+* */

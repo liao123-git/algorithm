@@ -20,14 +20,6 @@
     - 最后调用的函数，最先执行完
     - JS 解释器使用栈来控制函数的调用顺序
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/stack/callStack.js)
-### 应用场景
-- 十进制转二进制
-- 判断字符串的括号是否有效
-    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/stack/index.js#L11)
-- 函数调用堆栈
-    - 最后调用的函数，最先执行完
-    - JS 解释器使用栈来控制函数的调用顺序
-    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/stack/callStack.js)
 ## 队列
 - 一个先进先出的数据结构 
 - JS 中没有队列，但是可以用 Array 实现队列的所有功能
@@ -62,6 +54,43 @@
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/reverseList.js)
 - [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/reverseList.js)
+- [83. 删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/deleteDuplicates.js)
+- [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/hasCycle.js)
+### 前端与链表
+- JS 中的原型链
+    - 原型链的本质是链表
+    - 原型链上的节点是各种原型对象，比如
+        - > Function.prototype 
+        - > Object.prototype
+    - 原型链通过 _proto_ 属性连接各种原型对象 
+    - 原型链长啥样
+        - > obj -> Object.prototype -> null
+        - > func -> Function.prototype -> Object.prototype -> null
+        - > arr -> Array.prototype -> Object.prototype -> null
+    - 原型链知识点
+        - 如果 A 沿着原型链能找到 B.prototype，那么 A instanceof B 为 true
+        - 如果在 A 对象上没有找到 x 属性，那么会沿着原型链找 x 属性
+    - 面试题
+        - instanceof 的原理，用代码实现
+            - [实例](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/prototype.js#12)
+        - [第二题](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/prototype.js#25)
+-  使用链表指针获取 JSON 的节点值
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/linkedList/json.js)
+## 集合
+- 集合是一种无序且唯一的数据结构
+- ES6 中有集合，名为 SET
+- 集合的常规操作：去重、判断某元素是否在集合中、求交集
+### Leetcode 
+- [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/set/intersection.js)
+- [846. 一手顺子](https://leetcode-cn.com/problems/hand-of-straights/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/set/isNStraightHand.js)
+### 前端与集合
+- [实例](https://github.com/liao123-git/algorithm/blob/main/src/set/set.js)
+## 字典
+- 集合是一种无序且唯一的数据结构
 ## 树
 - 一种分层数据的抽象模型
 - 前端工作中常见的树包括：DOM 树，级联选择，树形控件
