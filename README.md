@@ -90,7 +90,18 @@
 ### 前端与集合
 - [实例](https://github.com/liao123-git/algorithm/blob/main/src/set/set.js)
 ## 字典
-- 集合是一种无序且唯一的数据结构
+- 与集合类似，字典也是一种存储唯一值的数据结构，但它是以键值对的形式来储存
+- ES6 中有字典，名为 Map
+- 字典的常用操作：键值对的增删改查
+### Leetcode 
+- [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/map/intersection.js)
+- [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/map/isValid.js)
+- [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/map/twoSum.js)
+- [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/map/minWindow.js)
 ## 树
 - 一种分层数据的抽象模型
 - 前端工作中常见的树包括：DOM 树，级联选择，树形控件
@@ -151,3 +162,23 @@
 - 遍历 JSON 的所有节点值
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/tree/json.js)
 - [用 React 或 Vue 编写一个省市区级联选择。](https://github.com/liao123-git/algorithm/blob/main/src/tree/CascadeSelection)
+## 图
+- 图是网络结构的抽象模型，是一组由边连接的节点
+- 图可以表示任何二元关系，比如道路、航班
+- JS 中没有图，但是可以用 Object 和 Array 构建图
+- 图的表示法：邻接矩阵、邻接表、关联矩阵
+### 图的深度广度优先遍历
+- 深度优先遍历
+    - 尽可能深的搜索图的分支
+    - 算法口诀
+        - 访问根节点
+        - 对根节点的没访问过的相邻节点挨个进行深度优先遍历
+- 广度优先遍历
+    - 先访问离根节点最近的节点
+    - 算法口诀
+        - 新建一个队列，把根节点入队
+        - 把队头出队并访问
+        - 把队头的没访问过的相邻节点入队
+### Leetcode 
+- [65. 有效数字](https://leetcode-cn.com/problems/valid-number/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/graph/isNumber.js)
