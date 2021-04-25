@@ -182,3 +182,9 @@
 ### Leetcode 
 - [65. 有效数字](https://leetcode-cn.com/problems/valid-number/)
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/graph/isNumber.js)
+    - [解题思路](https://github.com/liao123-git/algorithm/blob/main/src/graph/解题思路.jpg)
+- [417. 太平洋大西洋水流问题](https://leetcode-cn.com/problems/pacific-atlantic-water-flow/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/graph/pacificAtlantic.js)
+- [133. 克隆图](https://leetcode-cn.com/problems/clone-graph/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/graph/cloneGraph.js)
+    - 这题注意官方的坑，原本的测试用例有三个
