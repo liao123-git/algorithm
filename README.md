@@ -179,7 +179,7 @@
         - 新建一个队列，把根节点入队
         - 把队头出队并访问
         - 把队头的没访问过的相邻节点入队
-### Leetcode 
+### Leetcode *9*69639623//                                                                                                                                                   吧                      
 - [65. 有效数字](https://leetcode-cn.com/problems/valid-number/)
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/graph/isNumber.js)
     - [解题思路](https://github.com/liao123-git/algorithm/blob/main/src/graph/解题思路.jpg)
@@ -188,3 +188,46 @@
 - [133. 克隆图](https://leetcode-cn.com/problems/clone-graph/)
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/graph/cloneGraph.js)
     - 这题注意官方的坑，原本的测试用例有三个
+## 堆
+- 堆是一种特殊的完全二叉树
+- 所有的节点都大于等于（最大堆）或小于等于（最小堆）它的子节点
+- JS 中通常用数组表示堆
+- 左侧子节点的位置是 2 * index + 1
+- 右侧子节点的位置是 2 * index + 2
+- 父节点的位置是 (index - 1) / 2
+### Leetcode 
+- [215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/heap/findKthLargest.js)
+- [347. 前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/heap/topKFrequent.js)
+- [23. 合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/heap/mergeKLists.js)
+## 排序和搜索
+- 排序：把某个乱序的数组变成升序或者降序的数组
+- 搜索：找出数组中某个元素的下标
+- JS 中的排序：数组的 sort 方法
+- JS 中的搜索：数组的 indexOf 方法
+### 排序算法
+- 冒泡排序
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/sort/bubbleSort.js)
+    - 时间复杂度：O(N^2)
+- 选择排序
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/sort/selectSort.js)
+    - 时间复杂度：O(N^2)
+- 插入排序
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/sort/insertSort.js)
+    - 时间复杂度：O(N^2)
+- 归并排序
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/sort/mergeSort.js)
+    - 时间复杂度：O(N*logN)
+- 快速排序
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/sort/quickSort.js)
+    - 时间复杂度：O(N*logN)
+### 搜索算法
+- 顺序搜索
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/search/sequentialSearch.js)
+    - 时间复杂度：O(N)
+- 二分搜索
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/search/sequentialSearch.js)
+    - 时间复杂度：O(N)
+    - 必须是有序数组
