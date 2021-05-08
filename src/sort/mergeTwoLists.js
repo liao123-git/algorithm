@@ -11,24 +11,28 @@
  * @return {ListNode}
  */
 var mergeTwoLists = function (l1, l2) {
-    let res = new ListNode();
+    const res = new ListNode(0);
     let k1 = l1;
     let k2 = l2;
-    let k3 = res.next;
+    let k3 = res;
 
-    while (k1 || k2) {
-        if (k1 && k2) {
-            k3 = new ListNode(k1 > k2 ? k2 : k1);
-            k1 > k2 ? K2 = K2.next : K1 = K1.next;
-        } else if (k1) {
-            k3 = new ListNode(k1);
-            K1 = K1.next;
-        } else if (k2) {
-            k3 = new ListNode(k2);
-            K2 = K2.next;
+    while (k1 && k2) {
+        if (k1.val > k2.val) {
+            k3.next = k2;
+            k2 = k2.next;
+        } else {
+            k3.next = k1;
+            k1 = k1.next;
         }
         k3 = k3.next;
     }
 
+    k1 && (k3.next = k1);
+    k2 && (k3.next = k2);
+
     return res.next;
 };
+/*
+- 时间复杂度：O(N)，N 为两个链表中最短的节点数目 * 2
+- 空间复杂度：O(1)
+* */

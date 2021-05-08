@@ -179,7 +179,7 @@
         - 新建一个队列，把根节点入队
         - 把队头出队并访问
         - 把队头的没访问过的相邻节点入队
-### Leetcode *9*69639623//                                                                                                                                                   吧                      
+### Leetcode                                                                                                                                                 吧                      
 - [65. 有效数字](https://leetcode-cn.com/problems/valid-number/)
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/graph/isNumber.js)
     - [解题思路](https://github.com/liao123-git/algorithm/blob/main/src/graph/解题思路.jpg)
@@ -219,7 +219,7 @@
     - 时间复杂度：O(N^2)
 - 归并排序
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/sort/mergeSort.js)
-    - 时间复杂度：O(N*logN)
+    - 时间复杂度：O(N*logN)``
 - 快速排序
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/sort/quickSort.js)
     - 时间复杂度：O(N*logN)
@@ -231,3 +231,18 @@
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/search/sequentialSearch.js)
     - 时间复杂度：O(N)
     - 必须是有序数组
+### Leetcode                                                                                                                                                                       
+- [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/sort/mergeTwoLists.js)
+- [374. 猜数字大小](https://leetcode-cn.com/problems/guess-number-higher-or-lower/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/search/guessNumber.js)
+## 算法设计思想之 “分而治之”
+- 分而治之是算法设计中的一种方法
+- 它将一个问题分成多个和源问题相似的小问题，递归解决小问题，再将结果合并以解决原来的问题
+### Leetcode                                                                                                                                                 
+- [374. 猜数字大小](https://leetcode-cn.com/problems/guess-number-higher-or-lower/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/divideAndRule/guessNumber.js)                      
+- [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/divideAndRule/invertTree.js)
+- [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/divideAndRule/isSymmetric.js)
