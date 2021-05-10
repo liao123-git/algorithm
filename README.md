@@ -249,3 +249,8 @@
 ## 算法设计思想之 “动态规划”
 - 动态规划是算法设计中的一种方法
 - 它将一个问题分解成相互重叠的子问题，通过反复求解子问题，来解决原来的问题
+### Leetcode                                                                                   
+- [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/dynamicProgramming/climbStairs.js)
+- [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/dynamicProgramming/rob.js)   
