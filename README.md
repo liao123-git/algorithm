@@ -254,3 +254,29 @@
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/dynamicProgramming/climbStairs.js)
 - [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
     - [实例](https://github.com/liao123-git/algorithm/blob/main/src/dynamicProgramming/rob.js)   
+## 算法设计思想之 “贪心算法”
+- 贪心算法是算法设计中的一种方法
+- 期盼通过每个阶段的局部最优选择，从而达到全局的最优
+- 结果并不一定是最优
+### Leetcode                                                                                   
+- [70. 爬楼梯](https://leetcode-cn.com/problems/assign-cookies/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/greedyAlgorithm/findContentChildren.js)
+- [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/greedyAlgorithm/maxProfit.js)
+## 算法设计思想之 “回溯算法”
+- 回溯算法是算法设计中的一种方法
+- 回溯算法是一种渐进式寻找并构建问题解决方式的策略
+- 回溯算法会先从一个可能的动作开始解决问题，如果不行，就回溯并选择另一个动作，知道将问题解决
+### Leetcode                                                                                   
+- [46. 全排列](https://leetcode-cn.com/problems/permutations/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/backtrackingAlgorithm/permute.js)
+- [78. 子集](https://leetcode-cn.com/problems/subsets/)
+    - [实例](https://github.com/liao123-git/algorithm/blob/main/src/backtrackingAlgorithm/subsets.js)    
+## 位运算
+[详情](https://github.com/liao123-git/algorithm/blob/main/src/bits/detail.docx)
+## 阶乘
+在数学上, 一个正整数 n 的阶乘 (写作 n!), 就是所有小于等于 n 的正整数的乘积. 比如:
+> 5! = 5 * 4 * 3 * 2 * 1 = 120
+## 素数检测
+素数是自然数大于`1`不能由相乘两个较小的自然数来形成。大于自然数`1`而不是质数的自然数称为复合数。例如，`5`之所以成为质数，是因为将其编写为产品`1 × 5`或的唯一方法`5 × 1`涉及`5`自身。但是，`6`之所以是复合的，是因为它是两个`(2 × 3)`均小于的两个数的乘积`6`。  
+[素数检测](https://github.com/liao123-git/algorithm/blob/main/src/primalityTest/trialDivision.js)
